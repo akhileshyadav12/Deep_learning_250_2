@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     (test_images, test_labels) = get_test_data()
 
-    model_MLP = load_model('models/saved_model__mlp_best.h5')
+    model_MLP = load_model('models/saved_model_mlp_best.h5')
     loss, gt, pred = test(model_MLP, test_images, test_labels)
     write_data("multi-layer-net.txt",loss,gt,pred)
         
